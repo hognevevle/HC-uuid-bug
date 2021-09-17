@@ -21,7 +21,7 @@ namespace HcGuid
                 .AddGraphQLServer()
                 
                 // Commenting this seems to fix the error
-                .AddType(new UuidType('D'))
+                .AddType(new UuidType('D', true))
                 
                 .AddQueryType<Query>();
         }
